@@ -9,7 +9,7 @@ import { Component, Input } from '@angular/core';
       <div
         [ngClass]="{
           green: event?.time === '8:00 am',
-          bold: event?.time === '8.00 am'
+          bold: event?.time === '8:00 am'
         }"
         [ngSwitch]="event?.time"
       >
