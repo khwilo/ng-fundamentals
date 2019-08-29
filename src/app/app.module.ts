@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
 
 import { CreateEventComponent } from './events/create-event.component';
+import { Error404Component } from './errors/404.component';
 import { EventsAppComponent } from './events-app.component';
 import { EventDetailsComponent } from './events/event-details/event-details.component';
 import { EventsListComponent } from './events/events-list.component';
@@ -20,6 +21,7 @@ import { ToastrService } from "./common/toastr.service";
   ],
   declarations: [
     CreateEventComponent,
+    Error404Component,
     EventsAppComponent,
     EventDetailsComponent,
     EventsListComponent,
