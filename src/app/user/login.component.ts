@@ -5,9 +5,20 @@ import { AuthService } from './auth.service';
 
 @Component({
   selector: 'app-login',
-  templateUrl: './login.component.html'
+  templateUrl: './login.component.html',
+  styles: [`
+    em {
+      float: right;
+      color: #E05C65;
+      padding-left: 10px;
+    }
+  `]
 })
 export class LoginComponent {
+  userName;
+  password;
+  mouseOverLogin;
+
   constructor(
     @Inject(AuthService) private authService: AuthService, @Inject(Router) private router: Router) {}
 
